@@ -5,11 +5,6 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-
-/**
- * Extend the run-method of this class as necessary to complete the assignment.
- * You may also add some fields, methods, or further classes.
- */
 public class CalcSocketServer extends Thread {
 	private ServerSocket srvSocket;
 	private int port;
