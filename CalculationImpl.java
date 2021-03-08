@@ -5,9 +5,6 @@ import java.rmi.server.UnicastRemoteObject;
 
 import de.unistgt.ipvs.vs.ex1.common.ICalculation;
 
-/**
- * Notice that you are not allowed to change this class.
- */
 public class CalculationImpl extends UnicastRemoteObject implements ICalculation {
 	private static final long serialVersionUID = -2946208347668376521L;
 	
