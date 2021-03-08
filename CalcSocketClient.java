@@ -6,10 +6,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.net.Socket;
 
-/**
- * Implement the connectTo-, disconnect-, and calculate-method of this class
- * as necessary to complete the assignment. You may also add some fields or methods.
- */
+
 public class CalcSocketClient implements Serializable{
 	private Socket cliSocket;
 	private int    rcvdOKs;		// --> Number of valid message contents
@@ -39,10 +36,8 @@ public class CalcSocketClient implements Serializable{
 
 	public boolean connectTo(String srvIP, int srvPort)   {
                
-		//Solution here
 		try {
 			
-			//Solution here
 			//creating socket to communicate with server
 			cliSocket = new Socket(srvIP,srvPort);
 			
@@ -71,7 +66,6 @@ public class CalcSocketClient implements Serializable{
 	 
 	public boolean disconnect()  {
                
-	    //Solution here
 		
 		try {
         System.out.println("Sending close request to Socket Server");
@@ -96,7 +90,6 @@ public class CalcSocketClient implements Serializable{
 			return false;
 		}
 		
-		//Solution here
 		
 		//writing the request to server
 		oosclient.writeObject(request);
