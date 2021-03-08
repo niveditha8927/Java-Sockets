@@ -34,3 +34,6 @@ sent to the client with “OK” followed by a single whitespace character, the 
 11. Each invalid content (e.g., “DS1”) is acknowledged with “ERR” followed by a single
 whitespace character and the invalid content. Invalid contents are not processed.
 12. A session is only terminated when the client closes the connection.
+
+!!!Note: !!!
+Only contains main files for server, client and calculation not other files.
